@@ -1,0 +1,29 @@
+import java.util.*;
+import java.lang.*;
+public class MyClass {
+    public static void main(String args[]) {
+     Scanner s=new Scanner(System.in);
+     String str="zca";
+     int t=3,d,i,j=t-1,v,l=t-1;
+     int arr[]={1,2,3};
+     char []ch=new char[20];
+     ch=str.toCharArray();
+     char []h=new char[20];
+     for(i=0;i<t;i++)
+     {
+         v=ch[j--];
+         d=v+arr[i];
+         if(v>=121)
+         {
+             d=(v-26)+arr[i];
+             h[l--]=(char)d;
+         }
+         else
+         {
+         h[l--]=(char)d;
+         }
+     }
+     String ans=String.valueOf(h);
+      System.out.println("Sum of x+y = " + ans);
+    }
+}
