@@ -1,0 +1,17 @@
+public class MyClass 
+{
+    public static void main(String args[]) 
+    {
+      int sum=0,val;
+    String s="Hi2da Kar7thi25";
+    for(char ch:s.toCharArray())
+    {
+        if(Character.isDigit(ch))
+        {
+         val=Integer.parseInt(String.valueOf(ch));   
+            sum=sum+val;
+        }
+    }
+      System.out.println("Sum= " + sum);
+    }
+}
